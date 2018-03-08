@@ -26,7 +26,7 @@
 					<nav>
 						<ul>
 							<li>
-								<a href="#" class="ativo">Home</a>
+								<a href="index.html" class="ativo">Home</a>
 							</li>
 							<li>
 								<a href="#">Quem Somos</a>
@@ -77,7 +77,7 @@
 			<div class="menuinterno">
 				<ul id="menu">
 					<li>
-						<a href="#">Notícias</a>
+						<a href="index.html">Notícias</a>
 						<img src="assets/images/arrowdown.png" width="12" border="0" />
 						<div class="submenu">
 							<a href="#">
@@ -103,27 +103,27 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Entretenimento</a>
+						<a href="">Entretenimento</a>
 						<img src="assets/images/arrowdown.png" width="12" border="0" />
 						<div class="submenu">
-							<a href="#">
+							<a href="entretenimento.html">
 								<div class="submenuitem">
 									Filmes &amp Séries
 								</div>
 							</a>
-							<a href="#">
+							<a href="Games_index.html">
 								<div class="submenuitem">
 									Jogos
 								</div>
 							</a>
 						</div>
 					</li>
-					<li>
-						<a href="#">Esportes</a>
+					<li class="pagina_atual">
+						<a href="esportes.html">Esportes</a>
 						<img src="assets/images/arrowdown.png" width="12" border="0" />
 						<div class="submenu">
-							<a href="#">
-								<div class="submenuitem">
+							<a href="esportes.html">
+								<div class="submenuitem pagina_atual">
 									Futebol
 								</div>
 							</a>
@@ -135,7 +135,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">Técnologia</a>
+						<a href="tecnologia.html">Técnologia</a>
 					</li>
 				</ul>
 			</div>
@@ -159,6 +159,7 @@
 							<div class="bolinhas" onclick="mudarSlide(1)"></div>
 							<div class="bolinhas" onclick="mudarSlide(2)"></div>
 							<div class="bolinhas" onclick="mudarSlide(3)"></div>
+							<div class="bolinhas" onclick="mudarSlide(4)"></div>
 						</div>
 						<div class="slideshowarea">
 							<a href="http://www.google.com.br/">
@@ -183,12 +184,22 @@
 									<div class="slideinfo_subtitulo">A Nest foi ganhando fama com o passar dos anos e, em janeiro de 2014, o negócio foi comprado pela Google por US$ 3,2 bilhões.</div>
 								</div>
 							</div>
-							<div class="slide" style="background-image:url('assets/images/android.jpg')">
+							<a href="Games_index.html">
+							<div class="slide" style="background-image:url('assets/images/dragonball.jpg')">
 								<div class="slideinfo">
-									<div class="slideinfo_titulo">Modificado! Android Auto passa por atualização e está de cara nova</div>
-									<div class="slideinfo_subtitulo">Mas, em uma atualização recente, o aplicativo passou por upgrades que capricharam na parte estética e melhoraram a interação com o motorista ou passageiro.</div>
+									<div class="slideinfo_titulo">Dragon Ball FighterZ acabou de ficar melhor com o DLC "Anime Music Pack".</div>
+									<div class="slideinfo_subtitulo">O DLC, disponível a partir de hoje na PlayStation Store, Xbox Live e Steam, inclui 11 músicas originais na anime de Dragon Ball, Dragon Ball Z e Dragon Ball GT. Com estas músicas a tocar no plano de fundo, vais sentir que estás mesmo numa das lutas épicas da anime.</div>
 								</div>
-							</div>														
+							</div>	
+							</a>
+							<a href="tecnologia.html">
+								<div class="slide" style="background-image:url('assets/images/tecnologias.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Lançamento de Novas Tecnologias no mercado.</div>
+										<div class="slideinfo_subtitulo">Vejam as novas tecnologias lançadas na ultíma feira de tecnoligia digital nos Estados Unidos.</div>
+									</div>
+								</div>	
+							</a>														
 						</div>
 					</div>
 					<div class="contesp">
@@ -201,21 +212,21 @@
 						<h2>PRÊMIO PUSKAS</h2>
 						<P>O gol mais bonito do ano foi de Oliver Giroud, um espetacular tento, muito plástico,
 						anotado na Premier League, pelo Arsenal, contra o Crystal Palace.</P>
-						<iframe src="https://www.youtube.com/embedv=mtDm7OL18Lo"></iframe>
-						<h2>MELHOR TÉCNICO DO ANO</h2>
+						<iframe width="100%" height="300" src="https://www.youtube.com/embed/7Ji-tIKtbvA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<h2 id="tecnico">MELHOR TÉCNICO DO ANO</h2>
 						<img src="assets/images/zidanefut.jpg" width="100%" />
 						<p>O melhor treinador do mundo em 2017 no futebol masculino foi, como esperado, Zinedine Zidane. Melhor 
 						do mundo três vezes como jogador, o francês foi eleito o melhor treinador pela primeira vez e com todos os méritos. 
 						Dono de um trabalho espetacular no Real Madrid, na última temporada, Zizou ganhou o bicampeonato da 
 						Champions League, além do Mundial de Clubes, de La Liga e da Supercopa da Europa.</p>
-						<h2>MELHOR GOLEIRO DO ANO</h2>
+						<h2 id="goleiro">MELHOR GOLEIRO DO ANO</h2>
 						<img src="assets/images/goleirofut.jpg" width="100%" />
 						<p>Com toda a justiça, Gianluigi Buffon, o mito da Juventus e da Itália, foi eleito o melhor
 						goleiro da última temporada. Aos 39 Anos, o mítico goleiro foi mais uma vez um dos destaques
 						da Vecchia Signora, que manteve a hegemonia doméstica com os títulos da Série A e da Coppa Italia, e foi vice-campeã da Champions
 						League. Foram vários milagres e grandes atuações ao longo do ano, e o veterano foi merecidamente homenageado
 						e ganhou o prêmio.</p>
-						<h2>MELHORES TORCEDORES DO ANO</h2>
+						<h2 id="torcida">MELHORES TORCEDORES DO ANO</h2>
 						<img src="assets/images/torcidafut.jpg" width="100%" />
 						<p>Uma das torcidas mais fanáticas do mundo foi merecidamente homenagiada. Entre tantos momentos épicos e emocionantes, o Celtic ganhou o prêmio
 						da torcida no The Best. O clube, que tem um significado ainda maior que o futebol, arrepiou o mundo em vários momentos na última temporada com mosaicos,
